@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import useUserStore from '../../store/userStore';
 
 interface FormStepperProps {
   steps: { label: string; description: string }[];

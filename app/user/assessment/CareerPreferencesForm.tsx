@@ -148,7 +148,7 @@ export default function CareerPreferencesForm() {
       <div>
         <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Preferred Industries</h3>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-          Select up to 5 industries you're interested in working in.
+          Select up to 5 industries you&apos;re interested in working in.
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

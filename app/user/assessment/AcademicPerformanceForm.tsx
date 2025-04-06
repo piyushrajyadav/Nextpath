@@ -223,7 +223,7 @@ export default function AcademicPerformanceForm() {
       <div>
         <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">Competitive Exam Scores</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
-          Add scores for any competitive exams you've taken (JEE, NEET, CAT, GATE, etc.)
+          Add scores for any competitive exams you&apos;ve taken (JEE, NEET, CAT, GATE, etc.)
         </p>
         
         {/* Add new exam score */}

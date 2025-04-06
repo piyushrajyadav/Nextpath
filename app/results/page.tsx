@@ -9,9 +9,8 @@ import Link from 'next/link';
 
 export default function ResultsPage() {
   const router = useRouter();
-  const { user, assessmentCompleted, completeAssessment } = useUserStore();
+  const { user, assessmentCompleted } = useUserStore();
   const [loading, setLoading] = useState(true);
-  const [resultsGenerated, setResultsGenerated] = useState(false);
 
   useEffect(() => {
     // Check if user has completed assessment
@@ -24,7 +23,6 @@ export default function ResultsPage() {
     const generateResults = async () => {
       try {
         await new Promise(resolve => setTimeout(resolve, 2500)); // Simulate API delay
-        setResultsGenerated(true);
         setLoading(false);
       } catch (error) {
         console.error('Error generating results:', error);
@@ -56,7 +54,7 @@ export default function ResultsPage() {
           <FiLoader className="animate-spin text-5xl mx-auto mb-4 text-primary" />
           <h1 className="text-2xl font-bold mb-2">Generating Your Career Recommendations</h1>
           <p className="text-muted-foreground mb-8">
-            We're analyzing your profile to find the best career matches...
+            We&apos;re analyzing your profile to find the best career matches...
           </p>
           
           <div className="max-w-md mx-auto">
@@ -91,7 +89,7 @@ export default function ResultsPage() {
           <FiCheckCircle className="text-primary text-5xl mx-auto mb-4" />
           <h1 className="text-3xl font-bold mb-2">Assessment Complete!</h1>
           <p className="text-muted-foreground">
-            Thank you for completing your career assessment. We've analyzed your information and prepared your personalized career recommendations.
+            Thank you for completing your career assessment. We&apos;ve analyzed your information and prepared your personalized career recommendations.
           </p>
         </div>
 
