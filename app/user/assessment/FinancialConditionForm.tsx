@@ -154,7 +154,7 @@ export default function FinancialConditionForm() {
               </div>
               <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
                 <p>
-                  India offers various scholarship programs at central and state levels. We'll include relevant scholarship information in your career recommendations.
+                  India offers various scholarship programs at central and state levels. We&apos;ll include relevant scholarship information in your career recommendations.
                 </p>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function FinancialConditionForm() {
       <div>
         <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Educational Loans</h3>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-          Indicate if you're willing to consider educational loans for funding your education or career training.
+          Indicate if you&apos;re willing to consider educational loans for funding your education or career training.
         </p>
         
         <div className="bg-gray-50 dark:bg-dark-300 rounded-md p-5">
@@ -196,7 +196,7 @@ export default function FinancialConditionForm() {
                 <li>Moratorium period until course completion plus 6-12 months</li>
               </ul>
               <p className="mt-2">
-                We'll provide information about career paths where the return on investment typically justifies taking out loans.
+                We&apos;ll provide information about career paths where the return on investment typically justifies taking out loans.
               </p>
             </div>
           )}

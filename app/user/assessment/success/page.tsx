@@ -88,7 +88,7 @@ export default function AssessmentSuccessPage() {
               Assessment Complete!
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Thank you for completing your career assessment. We've analyzed your information and prepared your personalized career recommendations.
+              Thank you for completing your career assessment. We&apos;ve analyzed your information and prepared your personalized career recommendations.
             </p>
           </div>
           
@@ -201,7 +201,7 @@ export default function AssessmentSuccessPage() {
           
           <div className="text-center">
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              Based on your profile, we've prepared personalized career recommendations for you. View your dashboard to explore careers that match your profile.
+              Based on your profile, we&apos;ve prepared personalized career recommendations for you. View your dashboard to explore careers that match your profile.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button

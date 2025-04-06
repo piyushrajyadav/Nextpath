@@ -141,7 +141,7 @@ export default function FuturePlansForm() {
       <div>
         <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Higher Education Plans</h3>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-          Let us know if you're interested in pursuing higher education as part of your career journey.
+          Let us know if you&apos;re interested in pursuing higher education as part of your career journey.
         </p>
         
         <div className="bg-gray-50 dark:bg-dark-300 rounded-md p-5">
@@ -155,7 +155,7 @@ export default function FuturePlansForm() {
               onChange={handleCheckboxChange}
             />
             <label htmlFor="higherEducationPlans" className="ml-3 text-sm font-medium text-gray-700 dark:text-gray-300">
-              I'm interested in pursuing higher education
+              I&apos;m interested in pursuing higher education
             </label>
           </div>
           
@@ -183,7 +183,7 @@ export default function FuturePlansForm() {
               </div>
               
               <p className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-700">
-                We'll include recommendations for relevant advanced degree programs that could enhance your career prospects in India and abroad if desired.
+                We&apos;ll include recommendations for relevant advanced degree programs that could enhance your career prospects in India and abroad if desired.
               </p>
             </div>
           )}
@@ -310,7 +310,7 @@ export default function FuturePlansForm() {
           </div>
           <div className="ml-3">
             <p className="text-sm text-blue-700 dark:text-blue-300">
-              You're almost done! After this step, we'll analyze your profile and provide personalized career recommendations tailored to the Indian job market and your specific preferences.
+              You&apos;re almost done! After this step, we&apos;ll analyze your profile and provide personalized career recommendations tailored to the Indian job market and your specific preferences.
             </p>
           </div>
         </div>

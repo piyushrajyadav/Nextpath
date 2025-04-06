@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import FormStepper from '@/app/results/components/FormStepper';
 import Button from '@/app/results/components/Button';
