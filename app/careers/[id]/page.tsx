@@ -1,8 +1,3 @@
-// This is a server component
-export default function CareerDetailPage({ id }: { id: string }) {
-  return <CareerDetailClient id={id} />;
-}
-
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -12,6 +7,11 @@ import { getMockCareerRecommendations } from '../../utils/ai';
 import Button from '@/app/results/components/Button';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+
+// This is a server component
+export default function CareerDetailPage({ id }: { id: string }) {
+  return <CareerDetailClient id={id} />;
+}
 
 // Client component
 function CareerDetailClient({ id }: { id: string }) {
