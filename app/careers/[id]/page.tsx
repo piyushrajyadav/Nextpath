@@ -8,7 +8,14 @@ import Button from '@/app/results/components/Button';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-export default function CareerDetailPage({ params }: { params: { id: string } }) {
+interface CareerParams {
+  params: {
+    id: string;
+  };
+  searchParams?: { [key: string]: string | string[] | undefined };
+}
+
+export default function CareerDetailPage({ params }: CareerParams) {
   const router = useRouter();
   const careerId = params.id;
   
