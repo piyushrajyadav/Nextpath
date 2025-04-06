@@ -1,3 +1,8 @@
+// This is a server component
+export default function CareerDetailPage({ params }: { params: { id: string } }) {
+  return <CareerDetailClient id={params.id} />;
+}
+
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -8,16 +13,10 @@ import Button from '@/app/results/components/Button';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-interface CareerParams {
-  params: {
-    id: string;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-
-export default function CareerDetailPage({ params }: CareerParams) {
+// Client component
+function CareerDetailClient({ id }: { id: string }) {
   const router = useRouter();
-  const careerId = params.id;
+  const careerId = id;
   
   const careerSuggestions = useUserStore((state) => state.careerSuggestions);
   const bookmarkedCareers = useUserStore((state) => state.bookmarkedCareers);
@@ -434,20 +433,6 @@ export default function CareerDetailPage({ params }: CareerParams) {
                   </p>
                 )}
               </div>
-              
-              {/* <div className="bg-primary-50 dark:bg-primary-900/20 rounded-lg p-6">
-                <h2 className="text-lg font-semibold text-primary-800 dark:text-primary-300 mb-3">Need Personalized Guidance?</h2>
-                <p className="text-sm text-primary-700 dark:text-primary-400 mb-4">
-                  Get expert advice tailored to your specific situation and career goals.
-                </p>
-                <Button
-                  onClick={() => router.push('/user/chat')}
-                  variant="primary"
-                  className="w-full justify-center"
-                >
-                  Chat with AI Advisor
-                </Button>
-              </div> */}
             </div>
           </div>
         </div>
