@@ -1,6 +1,8 @@
 // This is a server component
 export default function CareerDetailPage({ params }: { params: { id: string } }) {
-  return <CareerDetailClient id={params.id} />;
+  // Ensure that params is correctly typed
+  const { id } = params; // Destructure id from params
+  return <CareerDetailClient id={id} />;
 }
 
 'use client';
