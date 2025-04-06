@@ -170,7 +170,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300">
-                "CareerGuide helped me discover that my skills were perfect for a career in AI research, something I had never considered before. Now I'm pursuing my Master's with a clear career goal!"
+                &quot;CareerGuide helped me discover that my skills were perfect for a career in AI research, something I had never considered before. Now I&apos;m pursuing my Master&apos;s with a clear career goal!&quot;
               </p>
             </motion.div>
             
@@ -190,7 +190,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300">
-                "I was confused between so many career options after my commerce degree. The personalized guidance helped me find a perfect match in financial analysis and even suggested affordable certification courses."
+                &quot;I was confused between so many career options after my commerce degree. The personalized guidance helped me find a perfect match in financial analysis and even suggested affordable certification courses.&quot;
               </p>
             </motion.div>
             
@@ -210,7 +210,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300">
-                "After 5 years in a job I didn't enjoy, NextPath analyzed my transferable skills and pointed me toward UX design. The resource recommendations helped me transition without going back to school full-time."
+                &quot;After 5 years in a job I didn&apos;t enjoy, NextPath analyzed my transferable skills and pointed me toward UX design. The resource recommendations helped me transition without going back to school full-time.&quot;
               </p>
             </motion.div>
           </div>

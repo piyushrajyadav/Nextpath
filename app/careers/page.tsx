@@ -1,14 +1,12 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import useUserStore, { CareerSuggestion } from '@/app/store/userStore';
+import useUserStore from '@/app/store/userStore';
 import { getMockCareerRecommendations } from '../utils/ai';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function CareersPage() {
-  const router = useRouter();
   const careerSuggestions = useUserStore((state) => state.careerSuggestions);
   const setCareerSuggestions = useUserStore((state) => state.setCareerSuggestions);
   const bookmarkedCareers = useUserStore((state) => state.bookmarkedCareers);
@@ -18,7 +16,6 @@ export default function CareersPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedIndustries, setSelectedIndustries] = useState<string[]>([]);
-  const [salaryRange, setSalaryRange] = useState<[number, number]>([0, 100]);
 
   // Load career suggestions if they don't exist
   useEffect(() => {
@@ -73,9 +70,8 @@ export default function CareersPage() {
         career.industries?.includes(industry)
       );
     
-    // Filter by salary range (converting string salary to number for comparison)
-    const careerSalary = career.salaryRange || career.averageSalary || '';
-    const salaryMatch = true; // Simplified for now due to complex string parsing
+    // Always return true for salary match since we removed the filter
+    const salaryMatch = true;
 
     return matchesSearch && matchesIndustries && salaryMatch;
   });

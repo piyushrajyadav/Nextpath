@@ -245,11 +245,11 @@ export default function DashboardPage() {
           {/* Header */}
           <div className="mb-12 flex justify-between items-start">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                Your Career Dashboard
+              <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
+                Career Recommendations
               </h1>
               <p className="mt-2 text-lg text-gray-600 dark:text-gray-300 max-w-3xl">
-                Based on your profile, we've identified these career paths in the Indian job market that best match your qualifications, interests, and goals.
+                Based on your profile, we&apos;ve identified these career paths in the Indian job market that best match your qualifications, interests, and goals.
               </p>
               <div className="mt-4">
                 <Link 
@@ -400,11 +400,11 @@ export default function DashboardPage() {
               <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">No {activeTab === 'bookmarked' ? 'bookmarked' : ''} careers found</h3>
               {activeTab === 'bookmarked' ? (
                 <p className="text-gray-600 dark:text-gray-300 max-w-md mx-auto">
-                  You haven't bookmarked any career recommendations yet. Bookmark careers you're interested in to view them here.
+                  You haven&apos;t bookmarked any career recommendations yet. Bookmark careers you&apos;re interested in to view them here.
                 </p>
               ) : (
                 <p className="text-gray-600 dark:text-gray-300 max-w-md mx-auto">
-                  We couldn't find any career recommendations based on your profile. Please update your assessment to get personalized suggestions.
+                  We couldn&apos;t find any career recommendations based on your profile. Please update your assessment to get personalized suggestions.
                 </p>
               )}
               {activeTab === 'bookmarked' && (
