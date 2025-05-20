@@ -1,5 +1,3 @@
-'use client';
-
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import useUserStore, { CareerSuggestion } from '@/app/store/userStore';
@@ -9,11 +7,16 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 // This is a server component
-export default function CareerDetailPage({ id }: { id: string }) {
-  return <CareerDetailClient id={id} />;
+export default function CareerDetailPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  return <CareerDetailClient id={params.id} />;
 }
 
 // Client component
+'use client';
 function CareerDetailClient({ id }: { id: string }) {
   const router = useRouter();
   const careerId = id;
