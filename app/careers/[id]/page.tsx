@@ -1,10 +1,17 @@
 import CareerDetailClient from '@/app/careers/[id]/CareerDetailClient';
+import { Metadata } from 'next';
 
-// This is a server component
-export default function CareerDetailPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  return <CareerDetailClient id={params.id} />;
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return {
+    title: `Career Details - ${params.id}`,
+  }
+}
+
+export default function CareerDetailPage(props: Props) {
+  return <CareerDetailClient id={props.params.id} />;
 } 
